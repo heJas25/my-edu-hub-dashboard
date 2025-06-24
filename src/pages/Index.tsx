@@ -1,14 +1,52 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from "react"
+import Sidebar from "@/components/Sidebar"
+import DashboardOverview from "@/components/DashboardOverview"
+import CoursesList from "@/components/CoursesList"
+import Calendar from "@/components/Calendar"
+import Notifications from "@/components/Notifications"
+import Certificates from "@/components/Certificates"
+import ProfileSettings from "@/components/ProfileSettings"
+import Support from "@/components/Support"
 
 const Index = () => {
+  const [activeSection, setActiveSection] = useState("overview")
+
+  const renderContent = () => {
+    switch (activeSection) {
+      case "overview":
+        return <DashboardOverview />
+      case "courses":
+        return <CoursesList />
+      case "calendar":
+        return <Calendar />
+      case "notifications":
+        return <Notifications />
+      case "certificates":
+        return <Certificates />
+      case "settings":
+        return <ProfileSettings />
+      case "support":
+        return <Support />
+      default:
+        return <DashboardOverview />
+    }
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gray-50 flex w-full">
+      <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
+      
+      {/* Main content */}
+      <div className="flex-1 lg:ml-0">
+        <main className="p-6 lg:p-8 pt-16 lg:pt-8">
+          <div className="max-w-7xl mx-auto">
+            {renderContent()}
+          </div>
+        </main>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
