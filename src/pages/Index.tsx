@@ -34,11 +34,11 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex w-full">
+    <div className="min-h-screen bg-gray-50 flex w-full" dir="rtl">
       <Sidebar activeSection={activeSection} onSectionChange={setActiveSection} />
       
-      {/* Main content */}
-      <div className="flex-1 lg:ml-0">
+      {/* المحتوى الرئيسي */}
+      <div className="flex-1 lg:mr-0">
         <main className="p-6 lg:p-8 pt-16 lg:pt-8">
           <div className="max-w-7xl mx-auto">
             {renderContent()}
