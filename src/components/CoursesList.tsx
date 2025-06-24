@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Button } from "@/components/ui/button"
@@ -9,54 +8,80 @@ const CoursesList = () => {
   const courses = [
     {
       id: 1,
-      title: "Développement Web avec React",
-      description: "Apprenez à créer des applications web modernes avec React et ses écosystèmes.",
+      title: "Mathématiques - Terminale S",
+      description: "Fonctions, limites, dérivées, intégrales et probabilités pour préparer le baccalauréat scientifique.",
       progress: 85,
       status: "en_cours",
-      duration: "12 semaines",
-      modules: 8,
-      completedModules: 7,
-      nextLesson: "Hooks avancés",
-      difficulty: "Intermédiaire",
-      thumbnail: "/placeholder.svg"
-    },
-    {
-      id: 2,
-      title: "Design UI/UX pour Débutants",
-      description: "Maîtrisez les principes du design et créez des interfaces utilisateur attrayantes.",
-      progress: 60,
-      status: "en_cours",
-      duration: "8 semaines",
-      modules: 6,
-      completedModules: 3,
-      nextLesson: "Prototypage avec Figma",
-      difficulty: "Débutant",
-      thumbnail: "/placeholder.svg"
-    },
-    {
-      id: 3,
-      title: "JavaScript ES6+ Avancé",
-      description: "Perfectionnez vos compétences en JavaScript moderne et découvrez les dernières fonctionnalités.",
-      progress: 90,
-      status: "presque_fini",
-      duration: "10 semaines",
-      modules: 10,
-      completedModules: 9,
-      nextLesson: "Projet final",
+      duration: "Année scolaire",
+      modules: 12,
+      completedModules: 10,
+      nextLesson: "Intégrales par parties",
       difficulty: "Avancé",
       thumbnail: "/placeholder.svg"
     },
     {
+      id: 2,
+      title: "Physique-Chimie - Terminale S",
+      description: "Mécanique, thermodynamique, électricité et chimie organique niveau terminale.",
+      progress: 60,
+      status: "en_cours",
+      duration: "Année scolaire",
+      modules: 10,
+      completedModules: 6,
+      nextLesson: "Les ondes mécaniques",
+      difficulty: "Avancé",
+      thumbnail: "/placeholder.svg"
+    },
+    {
+      id: 3,
+      title: "Philosophie - Terminale",
+      description: "Introduction à la philosophie : conscience, liberté, vérité et justice.",
+      progress: 40,
+      status: "en_cours",
+      duration: "Année scolaire",
+      modules: 8,
+      completedModules: 3,
+      nextLesson: "Le désir et l'existence",
+      difficulty: "Intermédiaire",
+      thumbnail: "/placeholder.svg"
+    },
+    {
       id: 4,
-      title: "Introduction aux Bases de Données",
-      description: "Découvrez SQL, NoSQL et les concepts fondamentaux des bases de données.",
-      progress: 0,
-      status: "pas_commence",
-      duration: "6 semaines",
-      modules: 5,
-      completedModules: 0,
-      nextLesson: "Introduction à SQL",
-      difficulty: "Débutant",
+      title: "Histoire-Géographie - Terminale S",
+      description: "Le monde contemporain : géopolitique, mondialisation et enjeux du XXIe siècle.",
+      progress: 70,
+      status: "en_cours",
+      duration: "Année scolaire",
+      modules: 9,
+      completedModules: 6,
+      nextLesson: "La Chine et le monde",
+      difficulty: "Intermédiaire",
+      thumbnail: "/placeholder.svg"
+    },
+    {
+      id: 5,
+      title: "Sciences de la Vie et de la Terre",
+      description: "Génétique, évolution, géologie et écosystèmes niveau terminale scientifique.",
+      progress: 55,
+      status: "en_cours",
+      duration: "Année scolaire",
+      modules: 8,
+      completedModules: 4,
+      nextLesson: "La génétique humaine",
+      difficulty: "Intermédiaire",
+      thumbnail: "/placeholder.svg"
+    },
+    {
+      id: 6,
+      title: "Anglais LV1 - Terminale",
+      description: "Perfectionnement de l'anglais : expression écrite et orale, littérature anglophone.",
+      progress: 80,
+      status: "presque_fini",
+      duration: "Année scolaire",
+      modules: 6,
+      completedModules: 5,
+      nextLesson: "Shakespeare et son époque",
+      difficulty: "Intermédiaire",
       thumbnail: "/placeholder.svg"
     }
   ]
